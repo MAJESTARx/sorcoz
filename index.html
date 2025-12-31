@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>Sınav Çalışma Uygulaması</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📚 Sınav Çalışma Uygulaması</h1>
+            <p class="subtitle">Soru dosyanızı yükleyin ve çalışmaya başlayın!</p>
+        </header>
+
+        <!-- Dosya Yükleme Bölümü -->
+        <div id="upload-section" class="section">
+            <div class="upload-area" id="upload-area">
+                <svg class="upload-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                    <polyline points="17 8 12 3 7 8"></polyline>
+                    <line x1="12" y1="3" x2="12" y2="15"></line>
+                </svg>
+                <p class="upload-text">Soru dosyanızı sürükleyin veya aşağıdaki butona tıklayın</p>
+                <p class="upload-hint">(.txt formatında olmalı)</p>
+                <button class="btn-upload" id="btn-upload">📁 Dosya Seç</button>
+                <button class="btn-secondary" id="btn-use-cache" style="display: none;">🕘 Son yüklenen dosyayı kullan</button>
+                <button class="btn-secondary" id="btn-clear-cache" style="display: none;">🧹 Cache’i temizle</button>
+                <input type="file" id="file-input" accept=".txt" style="display: none;">
+            </div>
+            
+            <div id="file-info" class="file-info" style="display: none;">
+                <div class="file-details">
+                    <span class="file-icon">📄</span>
+                    <span id="file-name"></span>
+                    <span id="question-count"></span>
+                </div>
+                <button class="btn-remove" id="remove-file">✕</button>
+            </div>
+
+            <div id="analysis-summary" class="analysis-summary" style="display: none;"></div>
+        </div>
+
+        <!-- Mod Seçimi -->
+        <div id="mode-selection" class="section" style="display: none;">
+            <h2>Çalışma Modunu Seçin</h2>
+            <div class="mode-cards">
+                <!-- Kartlar dinamik olarak oluşturulacak -->
+            </div>
+        </div>
+
+        <!-- Ünite Seçimi -->
+        <div id="unit-picker" class="section" style="display: none;">
+            <div class="game-header">
+                <button class="btn-back" id="back-from-unit-picker">← Geri</button>
+                <div class="progress-info" id="unit-picker-title">Ünite Seç</div>
+                <div></div>
+            </div>
+
+            <div class="feedback-message" id="unit-picker-feedback" style="display: none;"></div>
+
+            <div class="unit-picker-controls">
+                <button class="btn-secondary" id="unit-select-all">Tümünü Seç</button>
+                <button class="btn-secondary" id="unit-clear-all">Temizle</button>
+            </div>
+
+            <div id="unit-picker-list" class="unit-picker-list"></div>
+
+            <div class="game-controls">
+                <button class="btn-primary" id="unit-picker-start">Seçilenlerle Başla</button>
+            </div>
+        </div>
+
+        <!-- Boşluk Doldurma Oyunu -->
+        <div id="fillblank-game" class="section game-section" style="display: none;">
+            <div class="game-header">
+                <button class="btn-back" id="back-from-fillblank">← Geri</button>
+                <div class="progress-info">
+                    <span id="fb-current-question">1</span> / <span id="fb-total-questions">0</span>
+                    <div class="unit-label" id="fb-unit-label" style="display:none;"></div>
+                </div>
+                <div class="score-info">Skor: <span id="fb-score">0</span></div>
+            </div>
+            
+            <div class="question-container">
+                <div class="question-text" id="fb-question"></div>
+                <div class="feedback-message" id="fb-feedback" style="display: none;"></div>
+                <div class="answer-options" id="fb-options"></div>
+            </div>
+            
+            <div class="game-controls">
+                <button class="btn-secondary" id="fb-prev">Önceki Soru</button>
+                <button class="btn-secondary" id="fb-check">Kontrol Et</button>
+                <button class="btn-primary" id="fb-next" style="display: none;">Sonraki Soru</button>
+            </div>
+        </div>
+
+        <!-- Ünite Boşluk Doldurma (Toplu) -->
+        <div id="unit-bulk-game" class="section game-section" style="display: none;">
+            <div class="game-header">
+                <button class="btn-back" id="back-from-unit-bulk">← Geri</button>
+                <div class="progress-info" id="unit-bulk-title">Ünite</div>
+                <div></div>
+            </div>
+
+            <div class="bulk-layout">
+                <div class="bulk-answer-bank">
+                    <div class="bulk-bank-title">Cevaplar</div>
+                    <div class="answer-options" id="unit-bulk-options"></div>
+                </div>
+
+                <div class="bulk-questions">
+                    <div class="feedback-message" id="unit-bulk-feedback" style="display: none;"></div>
+                    <div id="unit-bulk-questions"></div>
+                </div>
+            </div>
+
+            <div class="game-controls">
+                <button class="btn-secondary" id="unit-bulk-toggle-mode">Sınav Modu</button>
+                <button class="btn-primary" id="unit-bulk-check" style="display: none;">Kontrol Et</button>
+            </div>
+        </div>
+
+        <!-- Çoktan Seçmeli Oyunu -->
+        <div id="multiple-choice-game" class="section game-section" style="display: none;">
+            <div class="game-header">
+                <button class="btn-back" id="back-from-mc">← Geri</button>
+                <div class="progress-info">
+                    <span id="mc-current-question">1</span> / <span id="mc-total-questions">0</span>
+                    <div class="unit-label" id="mc-unit-label" style="display:none;"></div>
+                </div>
+                <div class="score-info">Skor: <span id="mc-score">0</span></div>
+            </div>
+            
+            <div class="question-container">
+                <div class="question-text" id="mc-question"></div>
+                <div class="feedback-message" id="mc-feedback" style="display: none;"></div>
+                <div class="mc-options" id="mc-options"></div>
+            </div>
+            
+            <div class="game-controls">
+                <button class="btn-secondary" id="mc-prev">Önceki Soru</button>
+                <button class="btn-secondary" id="mc-check">Kontrol Et</button>
+                <button class="btn-warning" id="mc-retry" style="display: none;">Tekrar Dene</button>
+                <button class="btn-primary" id="mc-next" style="display: none;">Sonraki Soru</button>
+            </div>
+        </div>
+
+        <!-- Deneme Sınavı -->
+        <div id="exam-game" class="section game-section" style="display: none;">
+            <div class="game-header">
+                <button class="btn-back" id="back-from-exam">← Geri</button>
+                <div class="progress-info">
+                    <span id="exam-current-question">1</span> / <span id="exam-total-questions">0</span>
+                    <div class="unit-label" id="exam-unit-label" style="display:none;"></div>
+                </div>
+                <div class="timer-info" id="exam-timer">
+                    ⏱️ <span id="timer-display">00:00</span>
+                </div>
+            </div>
+            
+            <div class="question-container">
+                <div class="question-number">Soru <span id="exam-q-number">1</span></div>
+                <div class="question-text" id="exam-question"></div>
+                <div class="mc-options" id="exam-options"></div>
+            </div>
+            
+            <div class="exam-navigation">
+                <button class="btn-secondary" id="exam-prev" disabled>← Önceki</button>
+                <button class="btn-warning" id="exam-mark">İşaretle</button>
+                <button class="btn-primary" id="exam-next">Sonraki →</button>
+            </div>
+            
+            <div class="question-grid" id="question-grid"></div>
+            
+            <div class="exam-controls">
+                <button class="btn-danger" id="exam-finish">Sınavı Bitir</button>
+            </div>
+        </div>
+
+        <!-- Sonuç Ekranı -->
+        <div id="result-section" class="section" style="display: none;">
+            <div class="result-container">
+                <div class="result-icon" id="result-icon">🎉</div>
+                <h2>Test Tamamlandı!</h2>
+                <div class="result-stats">
+                    <div class="stat-item">
+                        <span class="stat-label">Toplam Soru</span>
+                        <span class="stat-value" id="result-total">0</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">Doğru</span>
+                        <span class="stat-value correct" id="result-correct">0</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">Yanlış</span>
+                        <span class="stat-value wrong" id="result-wrong">0</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">Başarı Oranı</span>
+                        <span class="stat-value" id="result-percentage">0%</span>
+                    </div>
+                </div>
+                <div class="result-actions">
+                    <button class="btn-primary" id="restart-same">Aynı Testle Tekrar</button>
+                    <button class="btn-secondary" id="new-test">Yeni Test</button>
+                    <button class="btn-info" id="show-review">Yanlışları İncele</button>
+                </div>
+                
+                <div id="review-section" style="display: none;">
+                    <h3>Yanlış Cevapladığınız Sorular</h3>
+                    <div id="wrong-answers-list"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
