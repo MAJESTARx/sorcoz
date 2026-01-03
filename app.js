@@ -1011,8 +1011,8 @@ function renderUnitBulkAnswerBank(unitAnswers) {
     const container = document.getElementById('unit-bulk-options');
     container.innerHTML = '';
 
-    const unique = uniqueStrings(unitAnswers);
-    const answersWithId = unique.map((text, index) => ({ id: `a${index}`, text }));
+    // BÜTÜN cevapları kullan (unique yapma) - aynı cevap birden fazla sorunun yanıtı olabilir
+    const answersWithId = unitAnswers.map((text, index) => ({ id: `a${index}`, text }));
     const shuffled = shuffleArray(answersWithId);
 
     shuffled.forEach((a) => {
