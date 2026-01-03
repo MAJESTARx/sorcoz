@@ -52,12 +52,16 @@ function uniqueStrings(input) {
     return out;
 }
 
-function buildUniqueOptions({ correctAnswer, pools, desiredCount }) {
+function buildUniqueOptions({ correctAnswer, pools, desiredCount, allowDuplicates = false }) {
     const correct = String(correctAnswer ?? '').trim();
-    const pool = uniqueStrings([].concat(...(Array.isArray(pools) ? pools : [])));
+    // Boşluk doldurma için allowDuplicates=true ise, tekrarlayan cevapları kaldırma
+    const pool = allowDuplicates 
+        ? [].concat(...(Array.isArray(pools) ? pools : [])).map(v => String(v ?? '').trim()).filter(Boolean)
+        : uniqueStrings([].concat(...(Array.isArray(pools) ? pools : [])));
     const distractors = pool.filter(a => a !== correct);
     const picked = shuffleArray(distractors).slice(0, Math.max(0, (desiredCount || 0) - 1));
     const combined = [correct, ...picked].filter(Boolean);
+    // Son seçeneklerde de unique kontrolü yap (ama allowDuplicates true ise kendi seçenekler içinde unique olsun)
     return shuffleArray(uniqueStrings(combined));
 }
 
@@ -1248,7 +1252,8 @@ function loadFillBlankQuestionHelper(question, correctAnswer, allAnswers) {
         allOptions = buildUniqueOptions({
             correctAnswer,
             pools: [allAnswers, answers, allAnswers],
-            desiredCount: 4
+            desiredCount: 4,
+            allowDuplicates: true  // Boşluk doldurma için tekrarlayan cevaplara izin ver
         });
         state.options = allOptions;
     }
