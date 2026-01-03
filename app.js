@@ -452,42 +452,6 @@ function parseQuestions(content) {
 
     const normalized = String(content || '').replace(/\r\n/g, '\n');
 
-    function parseAnswerList(rawAnswerKeyText) {
-        const text = String(rawAnswerKeyText ?? '').trim();
-        if (!text) return [];
-
-        // Ayraç çizgisinden sonrasını at (bazı dosyalarda cevap anahtarından sonra uzun çizgi var)
-        const beforeSeparator = text.split(/\n\s*-{10,}\s*\n/)[0];
-
-        // Cevap anahtarı bazen satır kırılarak devam edebiliyor.
-        // Virgül ile ayrılmış kabul edip, satır sonlarını boşlukla birleştir.
-        const flattened = beforeSeparator.replace(/\n+/g, ' ').replace(/\s+/g, ' ').trim();
-        let parts = flattened.split(',').map(a => a.trim()).filter(Boolean);
-
-        // Eğer virgül yoksa (veya çok azsa), satır satır liste formatına fallback
-        if (parts.length <= 1) {
-            parts = beforeSeparator
-                .split('\n')
-                .map(a => a.trim())
-                .filter(Boolean);
-        }
-
-        return parts;
-    }
-
-    function extractAnswerKeyFromBlock(blockText) {
-        const block = String(blockText ?? '');
-        const markerRegex = /CEVAP\s*(?:LAR\s+)?ANAHTARI\s*:/i;
-        const markerMatch = block.match(markerRegex);
-        if (!markerMatch || markerMatch.index == null) return null;
-        const startIndex = markerMatch.index + markerMatch[0].length;
-        const afterMarker = block.slice(startIndex);
-        return {
-            markerStartIndex: markerMatch.index,
-            answerKeyText: afterMarker
-        };
-    }
-
     // 0) Ünite blokları (bazı dosyalarda başında "+" var, bazılarında yok) ve her ünitede ayrı cevap anahtarı
     // Bu formatta dosyada birden fazla "CEVAP ANAHTARI" vardır.
     const unitBlockHeaderRegex = /^\s*(?:\+\s*)?(\d+)\s*\.\s*(?:[ÜüUu])[Nn](?:[İIıi])[Tt][Ee]\s*:?.*$/gmi;
@@ -501,12 +465,17 @@ function parseQuestions(content) {
             const end = i + 1 < headerMatches.length ? headerMatches[i + 1].index : normalized.length;
             const block = normalized.slice(start, end);
 
-            const extracted = extractAnswerKeyFromBlock(block);
-            if (!extracted) continue;
+            const answerKeyMatch = block.match(/CEVAP\s*(?:LAR\s+)?ANAHTARI\s*:\s*(.+)/i);
+            if (!answerKeyMatch) {
+                continue;
+            }
 
-            const unitAnswers = parseAnswerList(extracted.answerKeyText);
+            const unitAnswers = answerKeyMatch[1]
+                .split(',')
+                .map(a => a.trim())
+                .filter(Boolean);
 
-            const beforeKey = block.substring(0, extracted.markerStartIndex);
+            const beforeKey = block.substring(0, block.toLowerCase().indexOf(answerKeyMatch[0].toLowerCase()));
             const lines = beforeKey.split('\n').map(l => l.trim()).filter(Boolean);
 
             const unitQuestions = [];
@@ -539,15 +508,16 @@ function parseQuestions(content) {
         }
     } else {
         // Eski format (tek cevap anahtarı)
-        const extracted = extractAnswerKeyFromBlock(normalized);
-        if (!extracted) {
+        const answerKeyMatch = normalized.match(/CEVAP\s*(?:LAR\s+)?ANAHTARI\s*:\s*(.+)/i);
+        if (!answerKeyMatch) {
             alert('Cevap anahtarı bulunamadı! Dosya formatı hatalı.');
             return;
         }
 
-        answers = parseAnswerList(extracted.answerKeyText);
+        const answerKeyText = answerKeyMatch[1];
+        answers = answerKeyText.split(',').map(a => a.trim()).filter(a => a);
 
-        const questionsText = normalized.substring(0, extracted.markerStartIndex);
+        const questionsText = normalized.substring(0, answerKeyMatch.index);
 
         // 1) Ayraç ile ünite ayırma (----- gibi uzun çizgi)
         const separatorRegex = /\n\s*-{20,}\s*\n/g;
@@ -631,8 +601,8 @@ function parseQuestions(content) {
                     if (normalizedLine.includes('_______') && normalizedLine.length > 5) {
                         questions.push(normalizedLine);
                         currentUnitQuestions.push(normalizedLine);
-                    currentUnitAnswerIndices.push(globalAnswerIndex);
-                    globalAnswerIndex++;
+                        currentUnitAnswerIndices.push(globalAnswerIndex);
+                        globalAnswerIndex++;
                     }
                 }
             }
@@ -1026,71 +996,20 @@ function renderUnitBulk(examMode) {
         unit: currentUnit,
         indices,
         examMode,
-        checkedOnce: false,
-        consumedAnswerIds: new Set()
+        checkedOnce: false
     };
 
-    renderUnitBulkAnswerBank(currentUnit);
+    renderUnitBulkAnswerBank(currentUnit.answers);
     renderUnitBulkQuestions();
 }
 
-function consumeUnitBulkOptionById(answerId) {
-    const id = String(answerId || '').trim();
-    if (!id) return;
-
-    if (bulkState?.consumedAnswerIds?.has(id)) return;
-
-    const option = document.querySelector(`#unit-bulk-options .answer-option[data-answer-id="${CSS.escape(id)}"]`);
-    if (!option) {
-        bulkState?.consumedAnswerIds?.add(id);
-        return;
-    }
-
-    bulkState?.consumedAnswerIds?.add(id);
-
-    // Drag eventleriyle çakışmaması için mikro gecikme
-    setTimeout(() => {
-        try {
-            option.remove();
-        } catch {
-            // ignore
-        }
-    }, 0);
-}
-
-function buildUnitBulkAnswerBankItems(unit) {
-    const u = unit;
-    if (!u || !Array.isArray(u.questions) || !Array.isArray(u.answers)) return [];
-
-    const items = [];
-    for (let qi = 0; qi < u.questions.length; qi++) {
-        const questionText = String(u.questions[qi] ?? '');
-        const blanks = (questionText.match(/_______/g) || []).length;
-        if (blanks <= 0) continue;
-
-        const answerText = u.answers[qi];
-        const parts = splitAnswerParts(answerText);
-
-        for (let bi = 0; bi < blanks; bi++) {
-            const candidate = parts[Math.min(bi, parts.length - 1)] || normalizeText(answerText);
-            const text = String(candidate ?? '').trim();
-            if (!text) continue;
-            // Aynı cevap metni birden çok kez geçebilir; ID'yi benzersiz tut.
-            items.push({ id: `q${qi}b${bi}`, text });
-        }
-    }
-
-    return items;
-}
-
-function renderUnitBulkAnswerBank(unit) {
+function renderUnitBulkAnswerBank(unitAnswers) {
     const container = document.getElementById('unit-bulk-options');
     container.innerHTML = '';
 
-    // Toplu modda havuz, "benzersiz cevap" değil "boşluk sayısı" kadar olmalı.
-    // Aynı cevap metni birden fazla soru/boşlukta kullanılabiliyorsa tekrar tekrar gösterilir.
-    const items = buildUnitBulkAnswerBankItems(unit);
-    const shuffled = shuffleArray(items);
+    const unique = uniqueStrings(unitAnswers);
+    const answersWithId = unique.map((text, index) => ({ id: `a${index}`, text }));
+    const shuffled = shuffleArray(answersWithId);
 
     shuffled.forEach((a) => {
         const optionDiv = document.createElement('div');
@@ -1194,11 +1113,6 @@ function fillUnitBulkBlankFromOption(blankEl, optionEl) {
 
     if (!bulkState?.examMode) {
         markUnitBulkBlankImmediate(blankEl);
-
-        // Çalışma modunda doğru ise: kutucuk kilitli kalsın ve cevap havuzundan silinsin
-        if (blankEl.classList.contains('correct')) {
-            consumeUnitBulkOptionById(blankEl.dataset.filledAnswerId);
-        }
     }
 }
 
@@ -1266,9 +1180,6 @@ function checkUnitBulkExam() {
             correctCount++;
             blankEl.classList.add('correct');
             blankEl.classList.remove('wrong');
-
-            // Sınav modunda kontrol sonrası doğru cevapları üst havuzdan kaldır
-            consumeUnitBulkOptionById(blankEl.dataset.filledAnswerId);
         } else {
             blankEl.classList.add('wrong');
             blankEl.classList.remove('correct');
