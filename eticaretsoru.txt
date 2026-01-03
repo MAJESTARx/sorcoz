@@ -1,0 +1,220 @@
++ 1.Ünite :
+6563 Sayılı Kanun'a göre fiziki olarak karşı karşıya gelmeksizin, elektronik ortamda gerçekleştirilen çevrim içi iktisadi ve ticari her türlü faaliyete "_____" denir.
+
+Bir işletmenin üretim kontrolü, çalışan eğitimi veya bilgi paylaşımı gibi net bir para akışının zorunlu olmadığı süreçleri de kapsayan, ağlar üzerinden gerçekleştirdiği tüm işlemlere "_____" adı verilir.
+
+1980 sonrasında doğan ve dijital teknolojileri hayatlarının merkezine alan nesile "", teknolojiye sonradan uyum sağlamaya çalışan eski kuşağa ise "" denir.
+
+Satıcı ve alıcıların etkileşime geçmesi için üçüncü bir tarafça işletilen, Trendyol, Hepsiburada veya Amazon gibi platformlara genel olarak "_____" adı verilir.
+
+Firmaların elektronik ortamda tedarikçiye ulaşarak hammadde siparişi vermesi gibi işletmeler arası yapılan e-ticaret türü kısaca "_____" olarak adlandırılır.
+
+Fiziksel mağaza, sosyal medya ve web sitesi gibi tüm kanalların birbiriyle entegre edilerek tutarlı bir müşteri deneyimi yaratılmasına "_____" pazarlama denir.
+
+Yurt dışına satılan, 300 kg ve 15.000 Euro sınırının altındaki gönderilerin ETGB (Elektronik Ticaret Gümrük Beyanı) ile yapılabildiği ihracat modeline "_____" denir.
+
+Kullanıcıların sadece sunulan içeriği izleyebildiği, tek yönlü iletişimin olduğu (monolog) ve etkileşimin bulunmadığı web teknolojisi dönemine "_____" denir.
+
+Çift yönlü iletişime izin veren, kullanıcıların içerik üretebildiği ve sosyal ağların oluşumuna zemin hazırlayan web teknolojisi dönemine "_____" denir.
+
+E-ticaret işletmelerinin faaliyete başlamadan önce kayıt olmak zorunda oldukları, Gümrük ve Ticaret Bakanlığı bünyesindeki bilgi sistemine "_____" denir.
+
+Tüketicilerin bir internet sitesi üzerinden (örneğin ikinci el eşya satışı gibi) birbirleri ile gerçekleştirdikleri e-ticaret türü kısaca "_____"dir.
+
+Fiziksel bir mekâna ihtiyaç duymadan, özel tasarlanmış web siteleri üzerinden ticaretin yapıldığı işletmelere "_____" işletme denir.
+
+CEVAP ANAHTARI: E-ticaret, E-iş, Dijital Yerliler - Dijital Göçmenler, E-pazar yeri, B2B, Omnichannel, Mikro İhracat, Web 1.0, Web 2.0, ETBİS, C2C, Dijital iş modelli.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
++ 2.Ünite :
+Farklı sektörlerden çok çeşitli ürün kategorilerinin (elektronik, giyim, gıda vb.) tek bir platformda satıldığı, AVM mantığıyla çalışan pazaryerlerine "_____" e-pazaryeri denir. 
+
+Sadece belirli bir ürün grubuna, sektöre veya hedef kitleye (örneğin sadece kitap, sadece bebek ürünü) odaklanarak uzmanlaşmış platformlara "_____" e-pazaryeri denir. 
+
+E-pazaryerlerinin satıcıların gerçekleştirdiği her satış işlemi üzerinden, kategoriye göre değişen oranlarda bedel almasına dayanan ve en çok kullanılan gelir modeline "_____" gelir modeli denir. 
+
+Tüketicilerin ihtiyaç duydukları hizmeti belirterek fiyat teklifi istedikleri ve işletmelerin bu talebe teklif verdiği (Örn: Armut.com), değerin tüketici tarafından yaratıldığı modele "_____" e-ticaret denir. 
+
+Amazon, Netflix gibi firmaların, çok satan popüler ürünler yerine, az talep gören ama çeşidi çok olan niş ürünlerden toplamda daha fazla kar elde etmesini açıklayan modele "_____" (Long Tail) ekonomisi denir. 
+
+Bir e-ticaret sitesinin temel hizmetleri ücretsiz sunup, gelişmiş özellikler veya reklamsız kullanım için ücret talep ettiği iş modeline "_____" (Örn: Spotify, Linkedin) denir. 
+
+Firmaların devlet ihalelerine elektronik ortamda teklif vermesi veya vergilerini internetten ödemesi gibi süreçleri kapsayan e-ticaret türüne "_____" (B2G) denir. 
+
+Üretici veya satıcının stok tutmadan, gelen siparişleri tedarikçiye yönlendirerek ürünün doğrudan müşteriye kargolanmasını sağladığı sisteme "_____" (Dropshipping) denir. 
+
+Satıcıların ürünlerini listelemek, vitrine çıkarmak veya "acil", "fırsat" gibi etiketlerle öne çıkarmak için platforma ücret ödediği (Örn: Sahibinden.com) modele "_____" gelir modeli denir. 
+
+Belirli bir süre için sınırlı sayıda markanın ürünlerini, sadece üyelere özel yüksek indirimlerle sunan ve "fırsat kulübü" olarak da bilinen modele "_____" (Private Shopping) denir. 
+
+Tüketicilerin bir araya gelerek bir ürünü toplu halde indirimli satın almalarını sağlayan (Groupon mantığı) iş modeline "_____" satın alma denir. 
+
+Bir kişinin kendi web sitesinde veya sosyal medya hesabında başka bir firmanın ürününü tanıtarak, oluşan satış üzerinden komisyon (kar payı) almasına "_____" (Affiliate) pazarlama denir. 
+
+eBay veya GittiGidiyor'un ilk zamanlarında olduğu gibi, fiyatın alıcıların teklifleriyle dinamik olarak belirlendiği satış yöntemine "_____" usulü satış denir. 
+
+CEVAP ANAHTARI: Yatay, Dikey, Komisyon, C2B (Tüketiciden İşletmeye), Uzun Kuyruk, Freemium, İşletmeden Devlete, Stoksuz Satış, İlan/Listeleme, Özel Alışveriş, Grup, Satış Ortaklığı, Açık Artırma.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
++ 3.Ünite :
+Bir işletmenin "Biz kimiz?", "Ne iş yapıyoruz?" ve "Varoluş nedenimiz nedir?" sorularına cevap veren kısa ve öz ifadeye "_____" denir. 
+
+İşletmenin gelecekte ulaşmak istediği noktayı, hayalini ve uzun vadeli hedefini ifade eden kavrama "_____" denir. 
+
+İşletmenin kendi iç yapısındaki Güçlü ve Zayıf yönleri ile dış çevresindeki Fırsat ve Tehditleri analiz ederek strateji belirlemesine yarayan matrise "_____" analizi denir. 
+
+İşletmenin kontrolü dışında gelişen Politik, Ekonomik, Sosyal, Teknolojik, Yasal ve Çevresel makro faktörlerin incelendiği analiz yöntemine "_____" analizi denir. 
+
+Tüketicilerin zihninde rakiplerden farklı, üstün ve özel bir yer edinmek amacıyla işletmenin sunduğu temel faydayı vurgulama sürecine "_____" denir. 
+
+Pazarın tamamına hitap etmek yerine, pazarı yaş, gelir, cinsiyet veya yaşam tarzı gibi kriterlere göre alt gruplara ayırma işlemine "_____" (Segmentasyon) denir. 
+
+Rekabetin çok yoğun olduğu, kâr marjlarının düştüğü ve ürünlerin birbirine benzediği mevcut pazar koşullarını ifade eden stratejiye "_____" Okyanus stratejisi denir. 
+
+Rakiplerin olmadığı, henüz keşfedilmemiş yeni pazar alanları yaratarak rekabeti anlamsız kılmayı hedefleyen inovatif stratejiye "_____" Okyanus stratejisi denir. 
+
+Bir müşterinin e-ticaret sitesinden alışveriş yapması için ona sunulan, rakiplerde olmayan (hız, fiyat, kalite, deneyim vb.) somut faydaların toplamına "_____" önerisi denir. 
+
+İşletmenin rakiplerinden daha düşük maliyetle üretim yaparak veya operasyonel verimlilik sağlayarak fiyat avantajı elde etmesine "_____" liderliği stratejisi denir. 
+
+Sektördeki rekabetin şiddetini anlamak için "Tedarikçilerin gücü", "Müşterilerin gücü", "İkame ürün tehdidi" gibi 5 temel faktörü inceleyen modele "_____" Beş Güç Modeli denir. 
+
+Bir e-ticaret girişiminin iş fikrini, gelir modelini, maliyet yapısını ve hedef kitlesini tek bir sayfada görselleştiren plana "_____" İş Modeli Kanvası denir. 
+
+E-ticaret sitesinin arama motorlarında (Google vb.) üst sıralarda çıkarak organik (ücretsiz) trafik çekmesi için yapılan iyileştirme çalışmalarına kısaca "_____" denir. 
+
+CEVAP ANAHTARI: Misyon, Vizyon, SWOT, PESTLE, Konumlandırma, Pazar Bölümlendirme, Kızıl, Mavi, Değer, Maliyet, Porter, Lean (Yalın), SEO.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
++ 4.Ünite :
+Geleneksel e-ticaretin aksine, tüketicilerin sosyal etkileşim, paylaşım ve işbirliği araçlarını kullanarak alışveriş yapmasına imkân tanıyan ticaret türüne "_____" denir.
+
+İnternet kullanıcılarının sadece içerik tüketici olmaktan çıkıp, içerik üreticisi haline geldiği ve sosyal medyanın temelini oluşturan web teknolojisi dönemine "_____" denir.
+
+Sosyal medya üzerinde geniş bir takipçi kitlesine sahip olan ve tüketicilerin satın alma kararlarını etkileyebilen kişilere "_____" denir.
+
+Tüketicilerin satın aldıkları ürünler hakkında yaptıkları yorumlar, paylaştıkları fotoğraflar veya videolar gibi bizzat kullanıcılar tarafından üretilen tüm içeriklere "_____" (UGC) denir.
+
+Bir markanın veya ürünün sosyal medya kullanıcıları arasında kulaktan kulağa yayılarak, bir virüs gibi hızla popülerleşmesini sağlayan pazarlama tekniğine "_____" pazarlama denir.
+
+Sosyal medya (Social), Lokasyon (Local) ve Mobil (Mobile) kelimelerinin baş harflerinden oluşan ve mobil kullanıcılara konum tabanlı fırsatlar sunan kavrama "_____" denir.
+
+İnsanların başkalarının davranışlarını taklit etme eğiliminde olduğunu, yani bir ürünü çok kişi beğenirse o ürünün "iyi" olduğunu varsaymalarını ifade eden psikolojik kavrama "_____" (Social Proof) denir.
+
+İş dünyası profesyonellerinin ağ kurması, iş bulması ve B2B pazarlama faaliyetleri için kullandığı, kariyer odaklı en büyük sosyal ağ platformu "_____"dir.
+
+Facebook, Instagram gibi platformların içinde, başka bir siteye gitmeye gerek kalmadan doğrudan ürün satın alınabilmesini sağlayan "satın al" butonlarının kullanıldığı yapıya "_____" mağaza denir.
+
+Tüketicilerin bir ürünü satın almadan önce sosyal medyada arkadaşlarına danışması, anket yapması veya ürün inceleme videolarını izlemesi sürecine "_____" alışveriş denir.
+
+Sosyal ağlarda bir konu hakkında konuşulanların tamamını belirli bir başlık altında toplamak için kullanılan sembole (#) "_____" denir.
+
+Markaların, sosyal medyada haklarında konuşulanları takip etmek, krizleri önlemek ve müşteri algısını yönetmek için yaptıkları dinleme faaliyetine "_____" denir.
+
+CEVAP ANAHTARI: Sosyal Ticaret (S-ticaret), Web 2.0, Influencer (Fenomen), Kullanıcı Türevli İçerik, Viral, SoLoMo, Sosyal Kanıt, LinkedIn, Facebook/Sosyal, Sosyal, Hashtag (Etiket), Sosyal Medya Takibi (Monitoring).
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
++ 5.Ünite :
+Geleneksel pazarlama karması olan 4P'nin (Product, Price, Place, Promotion), tüketici odaklı 4C'ye dönüştüğü modelde, "Ürün" (Product) kavramının yerini "_____" (Customer Value) almıştır.
+
+Web sitesinin arama motoru sonuç sayfalarında (SERP) reklam ücreti ödemeden, doğal yollarla üst sıralarda çıkması için yapılan teknik çalışmalara "_____" (SEO) denir.
+
+Google gibi arama motorlarında, belirli anahtar kelimeler için ücret ödeyerek (Tıklama Başına Maliyet - PPC) ilk sıralarda yer alma çalışmasına "_____" (SEM) denir.
+
+Kullanıcıların izni olmadan gönderilen e-postalara "Spam" denirken, kullanıcının kendi rızasıyla bültenlere abone olduğu ve istediğinde çıkabildiği modele "_____" pazarlama denir.
+
+Bir e-ticaret sitesini ziyaret eden ancak satın alma yapmadan çıkan kullanıcıyı, başka sitelerde gezerken tekrar aynı ürün reklamlarıyla hedefleyerek geri kazanma stratejisine "_____" (Remarketing) denir.
+
+Markanın, ürünlerini doğrudan satmak yerine; eğitici, eğlendirici veya bilgilendirici blog yazıları ve videolarla hedef kitleye değer katarak güven kazanmaya çalıştığı yaklaşıma "_____" pazarlaması denir.
+
+E-ticaret sitesine gelen ziyaretçilerin yüzde kaçının hedeflenen eylemi (satın alma, üye olma vb.) gerçekleştirdiğini gösteren en önemli performans metriğine "_____" oranı denir.
+
+Bir web sayfasında kullanıcıların nereye tıkladığını, farenin nerede gezindiğini renklerle (kırmızı-sıcak, mavi-soğuk) gösteren analiz aracına "_____" haritası denir.
+
+Pazarı benzer özellikler gösteren alt gruplara (yaş, cinsiyet, gelir, coğrafya) ayırma işlemine "_____" (Segmentasyon) denir.
+
+E-posta pazarlamasında, gönderilen mailin alıcı tarafından açılıp açılmadığını gösteren orana "_____" oranı (Open Rate) denir.
+
+Potansiyel müşterilerin dikkatini çekmek, onları siteye çekmek ve müşteriye dönüştürmek için kullanılan satış hunisi modeline "_____" hunisi denir.
+
+Müşteri sadakati yaratmak ve uzun vadeli kârlılık sağlamak amacıyla, müşteri verilerini toplayıp analiz ederek kişiye özel ilişkiler geliştiren yönetim sistemine "_____" (CRM) denir.
+
+CEVAP ANAHTARI: Müşteri Değeri, Arama Motoru Optimizasyonu, Arama Motoru Pazarlaması, İzinli, Yeniden Pazarlama, İçerik, Dönüşüm (Conversion), Isı (Heatmap), Pazar Bölümlendirme, Açılma, Satış/Pazarlama, Müşteri İlişkileri Yönetimi.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
++ 6.Ünite :
+Bir e-ticaret sitesinin başarısını ölçmek için kullanılan, somut hedeflere dayalı, nicel ve ölçülebilir değerlerin tamamına "_____" (KPI) denir.
+
+Siteye gelen ziyaretçilerin, hedeflenen eylemi (satın alma, üye olma, dosya indirme vb.) gerçekleştirme yüzdesine "_____" oranı denir.
+
+Bir web sitesine giren kullanıcının, başka hiçbir sayfayı ziyaret etmeden veya hiçbir etkileşime girmeden siteden ayrılma yüzdesine "_____" oranı (Bounce Rate) denir.
+
+Bir işletmenin yeni bir müşteri kazanmak için pazarlama ve satış faaliyetlerine harcadığı toplam tutarın, kazanılan müşteri sayısına bölünmesiyle elde edilen değere "_____" maliyeti (CAC) denir.
+
+Bir müşterinin işletme ile ilişkisi boyunca firmaya kazandıracağı tahmin edilen toplam net kara "_____" (CLV) denir.
+
+Alışveriş sürecini başlatıp sepete ürün ekleyen ancak satın alma işlemini tamamlamadan siteden ayrılan kullanıcıların oranına "_____" oranı denir.
+
+Yapılan bir yatırımın karlılığını ölçmek için kullanılan ve "Yatırımın Getirisi" anlamına gelen finansal metriğe kısaca "_____" denir.
+
+Belirli bir dönemde (örneğin bir ay veya bir yıl) işletmeyle ilişiğini kesen, aboneliğini iptal eden veya alışverişi bırakan müşterilerin oranına "_____" oranı (Churn Rate) denir.
+
+Web sitesinde bir sayfanın veya ögenin (buton rengi, başlık vb.) iki farklı versiyonunun karşılaştırılarak hangisinin daha iyi performans gösterdiğinin test edilmesine "_____" testi denir.
+
+Bir e-ticaret sitesinde gerçekleşen toplam cironun, toplam sipariş sayısına bölünmesiyle elde edilen ve her bir siparişin ortalama tutarını gösteren metriğe "_____" denir.
+
+Ziyaretçilerin siteye hangi kanallardan (Arama motoru, sosyal medya, doğrudan trafik vb.) geldiğini gösteren verilere "_____" kaynakları denir.
+
+Bir web sayfasının görüntülenme sayısına "" (Hit) denirken, bir kullanıcının belirli bir süre içinde sitede gerçekleştirdiği etkileşimlerin tümüne "" (Oturum) denir.
+
+CEVAP ANAHTARI: Temel Performans Göstergesi, Dönüşüm, Hemen Çıkma, Müşteri Edinme, Müşteri Yaşam Boyu Değeri, Sepeti Terk Etme, ROI, Müşteri Kayıp, A/B, Ortalama Sipariş Tutarı, Trafik, Gösterim/Oturum.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
++ 7.Ünite :
+İnternet üzerinden kredi kartı ile yapılan alışverişlerde, fiziksel POS cihazının işlevini gören ve banka ile üye iş yeri arasındaki veri akışını sağlayan yazılıma "_____" denir.
+
+İnternet alışverişlerinde kart güvenliğini artırmak için Visa ve Mastercard tarafından geliştirilen, ödeme sırasında cep telefonuna gelen SMS şifresiyle doğrulama yapılan sisteme "_____" denir.
+
+Kredi kartı sahiplerinin, kendi iradeleri dışında veya hatalı yapıldığını düşündükleri işlemlere banka aracılığıyla itiraz etmesi sürecine "_____" (Chargeback) denir.
+
+Tüketicilerin kredi kartı, banka kartı ve adres bilgilerini tek bir güvenli dijital ortamda saklayarak, her alışverişte tekrar bilgi girmeden ödeme yapmasını sağlayan sisteme "_____" (Örn: BKM Express) denir.
+
+İnternet üzerinden yapılan alışverişin bedelinin, ürün teslim edildiği sırada nakit veya kredi kartı ile kargo görevlisine ödenmesi yöntemine "_____" denir.
+
+Herhangi bir merkeze veya otoriteye bağlı olmayan, Blokzincir teknolojisi üzerine kurulu ve dijital para birimi olarak kullanılan varlıklara "_____" (Örn: Bitcoin) denir.
+
+Tüketicinin banka hesabındaki parayı kullanarak ödeme yapmasını sağlayan, ATM kartı olarak da bilinen karta "_____" kartı (Debit Card) denir.
+
+Bir hesabın bulunduğu bankadan başka bir bankadaki hesaba para gönderilmesi işlemine "" denirken, aynı bankanın farklı şubeleri arasındaki para transferine "" denir.
+
+Kredi kartı işlemlerinde, işlem tutarının kart limitinden düşülmesi ve banka tarafından onay verilmesi aşamasına "_____" denir.
+
+Ödeme anında kartın POS cihazına veya telefona temas ettirilmeden, radyo frekansı (NFC) teknolojisi ile şifresiz ve hızlı işlem yapılmasına "_____" ödeme denir.
+
+Bankaların API'ler aracılığıyla müşteri finansal verilerini (müşteri izniyle) üçüncü taraf geliştiricilere açarak yeni finansal ürünlerin geliştirilmesini sağladığı modele "_____" bankacılık denir.
+
+Kredi kartı numarası yerine geçen, fiziksel varlığı olmayan ve limiti kullanıcı tarafından belirlenebilen, internet alışverişlerinde güvenlik amaçlı kullanılan karta "_____" kart denir.
+
+CEVAP ANAHTARI: Sanal POS, 3D Secure, Ters İbraz, Dijital Cüzdan (E-Cüzdan), Kapıda Ödeme, Kripto Para, Banka, EFT - Havale, Provizyon, Temassız, Açık, Sanal.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
++ 8.Ünite :
+Kişisel verilerin işlenmesinde başta özel hayatın gizliliği olmak üzere kişilerin temel hak ve özgürlüklerini korumak amacıyla düzenlenen kanuna kısaca "_____" (6698 Sayılı Kanun) denir.
+
+Tüketici ile satıcı arasında yapılan, ürünün nitelikleri, satış fiyatı, ödeme şekli ve teslimat koşulları gibi bilgilerin yer aldığı ve onaylanması zorunlu olan sözleşmeye "_____" satış sözleşmesi denir.
+
+Tüketicinin, internetten aldığı bir ürünü teslim aldıktan sonraki 14 gün içinde, hiçbir gerekçe göstermeksizin ve cezai şart ödemeksizin iade edebilme yetkisine "_____" hakkı denir.
+
+İnternet sitesi ile kullanıcının tarayıcısı arasındaki veri trafiğini şifreleyerek üçüncü şahısların (hackerların) bilgileri okumasını engelleyen güvenlik protokolüne "_____" sertifikası denir.
+
+Kötü niyetli kişilerin, banka veya resmi kurum taklidi yaparak gönderdikleri sahte e-postalarla kullanıcıların şifre ve kart bilgilerini çalmaya çalışması yöntemine "_____" (Phishing) denir.
+
+Bir ağa veya sisteme gelen ve giden veri trafiğini kontrol eden, yetkisiz erişimleri engelleyen güvenlik yazılımı veya donanımına "_____" (Firewall) denir.
+
+Elektronik ortamda oluşturulan dokümanların, ıslak imza ile aynı hukuki geçerliliğe sahip olmasını sağlayan ve kimlik doğrulamaya yarayan sayısal veriye "_____" denir.
+
+Bir web sitesini ziyaret ettiğinizde, site tercihlerinizin ve bilgilerinizin tarayıcınızda küçük metin dosyaları olarak saklanmasına "_____" (Cookies) denir.
+
+Bir web sitesine veya sunucuya, aynı anda binlerce bilgisayardan yoğun istek göndererek sistemi kilitlemek ve hizmet veremez hale getirmek amacıyla yapılan saldırıya "_____" (Hizmet Reddi) saldırısı denir.
+
+Telif hakları, patentler ve ticari markalar gibi insan zekasıyla üretilen eserlerin üzerindeki hakların tamamına "_____" haklar denir.
+
+Bilgi güvenliği yönetim sistemi standartlarını belirleyen ve işletmelerin bilgi varlıklarını korumak için almaları gereken uluslararası sertifikaya "_____" denir.
+
+E-ticaret sitelerinin alt kısmında bulunan ve sitenin kullanımı, gizlilik, iade gibi konulardaki yasal sorumlulukları ve kuralları içeren metinlere "_____" metinleri denir.
+
+CEVAP ANAHTARI: KVKK, Mesafeli, Cayma, SSL, Oltalama, Güvenlik Duvarı, Elektronik İmza (E-İmza), Çerez, DDoS, Fikri Mülkiyet, ISO 27001, Aydınlatma/Hukuki.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------

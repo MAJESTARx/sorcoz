@@ -1,4 +1,4 @@
-// Global değişkenler
+﻿// Global değişkenler
 let questions = [];
 let answers = [];
 let allQuestions = [];
@@ -493,7 +493,7 @@ function parseQuestions(content) {
                     .replace(/""\s*ve\s*""/g, '_______')
                     .replace(/“”\s*ve\s*“”/g, '_______');
 
-                if (normalizedLine.includes('_______') && normalizedLine.length > 5) {
+                if (/_{3,}/.test(normalizedLine) && normalizedLine.length > 5) {
                     unitQuestions.push(normalizedLine);
                 }
             }
@@ -555,7 +555,7 @@ function parseQuestions(content) {
                         .replace(/""\s*ve\s*""/g, '_______')
                         .replace(/“”\s*ve\s*“”/g, '_______');
 
-                    if (normalizedLine.includes('_______') && normalizedLine.length > 5) {
+                    if (/_{3,}/.test(normalizedLine) && normalizedLine.length > 5) {
                         questions.push(normalizedLine);
                         unitQuestions.push(normalizedLine);
                         unitAnswerIndices.push(globalAnswerIndex);
@@ -602,7 +602,7 @@ function parseQuestions(content) {
                         .replace(/""\s*ve\s*""/g, '_______')
                         .replace(/“”\s*ve\s*“”/g, '_______');
 
-                    if (normalizedLine.includes('_______') && normalizedLine.length > 5) {
+                    if (/_{3,}/.test(normalizedLine) && normalizedLine.length > 5) {
                         questions.push(normalizedLine);
                         currentUnitQuestions.push(normalizedLine);
                         currentUnitAnswerIndices.push(globalAnswerIndex);
@@ -1044,7 +1044,7 @@ function renderUnitBulkQuestions() {
         const expectedParts = splitAnswerParts(answerText);
 
         let blankIndex = 0;
-        const html = questionText.replace(/_______/g, () => {
+        const html = questionText.replace(/_{3,}/g, () => {
             const expected = expectedParts[Math.min(blankIndex, expectedParts.length - 1)] || normalizeText(answerText);
             const span = `<span class="blank bulk-blank" data-uq="${unitQuestionIndex}" data-b="${blankIndex}" data-expected="${escapeHtml(expected)}"></span>`;
             blankIndex++;
@@ -1240,7 +1240,7 @@ function loadFillBlankQuestionHelper(question, correctAnswer, allAnswers) {
     const questionContainer = document.getElementById('fb-question');
     
     let blankIndex = 0;
-    const questionHTML = question.replace(/_______/g, () => {
+    const questionHTML = question.replace(/_{3,}/g, () => {
         return `<span class="blank" data-index="${blankIndex++}"></span>`;
     });
     
@@ -1512,7 +1512,7 @@ function loadMultipleChoiceQuestion() {
     const question = questions[currentQuestionIndex];
     const correctAnswer = answers[currentQuestionIndex];
     
-    const questionText = question.replace(/_______/g, '...');
+    const questionText = question.replace(/_{3,}/g, '...');
     document.getElementById('mc-question').textContent = questionText;
     
     const state = mcAnswerStates[currentQuestionIndex] || (mcAnswerStates[currentQuestionIndex] = {});
@@ -1774,7 +1774,7 @@ function loadExamQuestion() {
     const question = questions[currentQuestionIndex];
     const correctAnswer = answers[currentQuestionIndex];
     
-    const questionText = question.replace(/_______/g, '...');
+    const questionText = question.replace(/_{3,}/g, '...');
     document.getElementById('exam-question').textContent = questionText;
     
     const wrongAnswers = answers.filter((_, idx) => idx !== currentQuestionIndex);

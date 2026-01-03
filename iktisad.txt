@@ -1,0 +1,228 @@
++ 1.Ünite :
+İnsanların sınırsız isteklerini karşılamada kullanılan kaynakların sınırlı olması durumuna iktisatta "_____" denir.
+
+Bir kararı verirken vazgeçilen en değerli ikinci alternatifin değerine "_____" maliyeti denir.
+
+Mevcut kaynaklar ve teknoloji ile üretilebilecek maksimum mal ve hizmet bileşimlerini gösteren, orijine göre içbükey olan eğriye "_____" eğrisi denir.
+
+Bir ekonomide teknolojik gelişme yaşanması veya sermaye stokunun artması durumunda Üretim İmkanları Eğrisi (ÜİE) orijine göre "_____" (dışa/sağa) doğru kayar.
+
+Üretim imkanları eğrisinin içindeki bir nokta, ekonomide kaynakların tam kullanılmadığını veya "_____" (Atıl/Eksik) kapasite olduğunu gösterir.
+
+Bir maldan daha fazla üretmek için diğer maldan vazgeçilmesi gereken miktarın giderek artması durumuna "_____" fırsat maliyeti yasası denir.
+
+İktisadın "ne olması gerektiği" ile değil, "ne olduğu" ile ilgilenen ve değer yargısı içermeyen dalına "_____" iktisat denir.
+
+Bir malın fiyatı dışındaki diğer tüm değişkenlerin (gelir, zevkler vb.) sabit varsayıldığı analiz yöntemine "_____" (Ceteris Paribus) denir.
+
+Üretim faktörlerinden biri olan "Emek" karşılığında elde edilen gelire "_____" denir.
+
+Doğal kaynakların veya toprağın üretim sürecine katılması karşılığında elde edilen gelire "_____" denir.
+
+Bireylerin ve firmaların kendi çıkarlarını maksimize edecek şekilde akılcı kararlar almasına iktisatta "_____" davranış denir.
+
+Bir ülkede savaş, doğal afet veya göç gibi nedenlerle üretim faktörlerinin azalması durumunda Üretim İmkanları Eğrisi "_____" (içe/sola) doğru daralır.
+
+CEVAP ANAHTARI: Kıtlık, Fırsat (Alternatif), Üretim İmkanları, Sağa, Atıl, Artan, Pozitif, Ceteris Paribus, Ücret, Rant, Rasyonel, Sola.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
++ 2.Ünite :
+Bir malın fiyatı arttığında talep edilen miktarın azalması, fiyat düştüğünde ise artması ilkesine "_____" kanunu denir.
+
+Tüketicinin geliri arttığında talep eğrisi sağa kayan (talebi artan) mallara "_____" mal denir.
+
+Bir malın fiyatındaki değişim, talep eğrisini kaydırmaz; sadece eğri üzerinde bir "_____" (harekete) neden olur.
+
+Üretim maliyetlerinin (örneğin hammadde fiyatlarının) artması durumunda arz eğrisi "_____" (sola/yukarı) doğru kayar.
+
+Tamamlayıcı bir malın (örneğin benzin) fiyatı artarsa, diğer malın (araba) talep eğrisi "_____" (sola) doğru kayar.
+
+İkame bir malın (örneğin tavuk) fiyatı artarsa, diğer malın (kırmızı et) talep eğrisi "_____" (sağa) doğru kayar.
+
+Teknolojik bir gelişme sayesinde üretim verimliliğinin artması, arz eğrisini "_____" (sağa) kaydırır; bu durumda denge fiyatı düşer.
+
+Piyasada talep artar (sağa kayar) ve arz sabit kalırsa, yeni dengede hem fiyat hem de miktar "_____" (artar).
+
+Piyasada arz artar (sağa kayar) ve talep sabit kalırsa, denge miktarı artarken denge fiyatı "_____" (azalır/düşer).
+
+Piyasa fiyatı denge fiyatının üzerinde oluşursa, arz edilen miktar talep edilen miktardan fazla olur ve piyasada "_____" (arz fazlası/bolluk) oluşur.
+
+Piyasa fiyatı denge fiyatının altında kalırsa, talep edilen miktar arz edilen miktardan fazla olur ve piyasada "_____" (talep fazlası/kıtlık) yaşanır.
+
+Fiyat değişimlerine karşı talep edilen miktarın çok duyarlı olduğu (Esneklik > 1) durumda talep eğrisi daha "_____" (yatık) bir görünüme sahiptir.
+
+Eğer hem arz hem de talep aynı anda artarsa (sağa kayarsa), denge miktarı kesinlikle artar ancak denge fiyatındaki değişim "_____" (belirsizdir).
+
+CEVAP ANAHTARI: Talep, Normal, Harekete, Sola, Sola, Sağa, Sağa, Artar, Düşer, Arz Fazlası, Talep Fazlası, Yatık, Belirsizdir.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
++ 3.Ünite :
+Bir tüketicinin bir malı satın almak için ödemeye razı olduğu maksimum fiyat ile gerçekte ödediği fiyat arasındaki farka "_____" rantı/fazlası denir.
+
+Talep eğrisinin altında ve piyasa fiyatının üzerindeki alan geometrik olarak "_____" rantını gösterir.
+
+Piyasa fiyatının altında ve arz eğrisinin üzerindeki üçgenin alanı "_____" rantını/fazlasını temsil eder.
+
+Devletin piyasa fiyatını çok yüksek bularak, tüketicileri korumak amacıyla belirlediği en yüksek fiyata "_____" fiyat denir.
+
+Devletin üreticileri korumak amacıyla belirlediği ve piyasa fiyatının üzerinde olması gereken en düşük fiyata "_____" fiyat denir.
+
+Etkin (denge) fiyatının altında belirlenen bir tavan fiyat uygulaması, piyasada kalıcı bir "_____" (talep fazlası/kıtlık) sorununa yol açar.
+
+Etkin fiyatın üzerinde belirlenen bir taban fiyat (destekleme fiyatı) uygulaması, piyasada satılamayan bir "_____" (arz fazlası/stok) oluşmasına neden olur.
+
+Tavan fiyat uygulaması sonucunda mal bulamayan tüketicilerin, malı yasal olmayan yollardan daha yüksek fiyata almasına "_____" (karaborsa) denir.
+
+Taban fiyat uygulamasında ortaya çıkan arz fazlasını genellikle "_____" satın alarak piyasadan çeker.
+
+Vergiler veya fiyat kontrolleri nedeniyle piyasa dengesinin bozulması sonucu, toplam refahta (toplam rantta) meydana gelen azalmaya "_____" kaybı (dara kaybı) denir.
+
+Piyasada kaynakların en verimli şekilde dağıldığı, toplam rantın (tüketici + üretici) maksimum olduğu duruma "_____" (tahsis) etkinliği denir.
+
+Asgari ücret uygulaması, işgücü piyasasında devletin uyguladığı bir "_____" fiyat örneğidir ve denge ücretinin üzerinde belirlenirse işsizliğe (arz fazlasına) neden olabilir.
+
+CEVAP ANAHTARI: Tüketici, Tüketici, Üretici, Tavan, Taban, Talep Fazlası (Kıtlık), Arz Fazlası (Stok), Karaborsa, Devlet, Refah (Dara), Piyasa, Taban.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
++ 4.Ünite :
+Bir malın fiyatındaki yüzde 1'lik değişime karşılık, talep edilen miktardaki yüzdesel değişimi ölçen katsayıya talebin "_____" esnekliği denir.
+
+Fiyat %10 arttığında, talep edilen miktar %20 azalıyorsa (Esneklik > 1), bu malın talebi fiyata karşı "_____" (esnektir).
+
+Fiyat değişimine karşı tüketicilerin tepkisinin az olduğu, esneklik katsayısının 1'den küçük olduğu (E < 1) duruma "_____" (inelastik/katı) talep denir.
+
+Talep esnekliğinin sonsuz olduğu (yatay eksene paralel) duruma "_____" esnek talep denir.
+
+Bir malın ikame edilebilirliği (alternatifi) ne kadar fazlaysa, o malın talep esnekliği o kadar "_____" (yüksek/fazla) olur.
+
+Talebi esnek olmayan (inelastik) bir malın fiyatı artırıldığında, satıcının elde edeceği toplam hasılat "_____" (artar).
+
+Talebi esnek olan bir malın fiyatı artırıldığında, miktar çok düşeceği için toplam hasılat "_____" (azalır).
+
+Tüketicinin geliri arttığında talebi artan malların (lüks mallar) gelir esnekliği "_____" (pozitif) değer alır.
+
+Bir malın fiyatı arttığında diğer malın talebi artıyorsa (Çapraz esneklik pozitifse), bu iki mal birbirine göre "_____" maldır.
+
+Bir malın fiyatı arttığında diğer malın talebi azalıyorsa (Çapraz esneklik negatifse), bu iki mal birbirine göre "_____" (tamamlayıcı) maldır.
+
+Arz eğrisi orijinden çıkan pozitif eğimli bir doğru ise (birim esnek), fiyat ne kadar değişirse değişsin arz esnekliği her zaman "_____" (1'e) eşittir.
+
+Kısa dönemde üretim kapasitesini artırmak zor olduğu için arz esnekliği düşükken, uzun dönemde arz esnekliği daha "_____" (yüksek) olur.
+
+Talep eğrisi ne kadar "" (dik) ise esneklik o kadar düşüktür; ne kadar "" (yatık) ise esneklik o kadar yüksektir.
+
+CEVAP ANAHTARI: Fiyat, Esnektir, Esnek Olmayan, Tam, Yüksek, Artar, Azalır, Pozitif, İkame, Tamamlayıcı, 1'e, Yüksek, Dik - Yatık.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
++ 5.Ünite : 
+Bir mal veya hizmetin tüketilmesi sonucunda elde edilen tatmine iktisatta "_____" denir.
+
+Bir maldan tüketilen miktar bir birim artırıldığında, toplam faydada meydana gelen değişime "_____" fayda denir.
+
+Bir malın tüketimi arttıkça, o maldan elde edilen marjinal faydanın giderek azalmasına "_____" marjinal fayda yasası denir.
+
+Toplam faydanın maksimum olduğu noktada (doyum noktası), marjinal fayda "_____" (sıfırdır).
+
+Tüketiciye aynı toplam faydayı sağlayan farklı mal bileşimlerinin geometrik yerine "_____" eğrisi denir.
+
+Farksızlık eğrileri orijine göre "_____" (dışbükey) bir yapıdadır ve birbirlerini asla kesmezler.
+
+Tüketicinin mevcut geliri ve piyasa fiyatlarıyla satın alabileceği maksimum mal bileşimlerini gösteren doğruya "_____" doğrusu (kısıtı) denir.
+
+Tüketicinin geliri arttığında, fiyatlar sabitken bütçe doğrusu paralelliğini koruyarak "_____" (sağa/dışa) doğru kayar.
+
+Sadece bir malın fiyatı artarsa (örneğin X malı), bütçe doğrusu o malın ekseninde orijine doğru "_____" (döner/daralır) ve eğimi değişir.
+
+Tüketici dengesi, bütçe doğrusunun farksızlık eğrisine "_____" (teğet) olduğu noktada oluşur.
+
+Bir malın fiyatı düştüğünde, tüketicinin reel gelirinin artması sonucu o maldan daha fazla almasına "_____" etkisi denir.
+
+Bir malın fiyatı düştüğünde, tüketicinin nispi olarak pahalılaşan diğer mal yerine ucuzlayan malı tercih etmesine "_____" etkisi denir.
+
+Farksızlık eğrisi üzerinde aşağıya doğru hareket edildikçe, bir maldan bir birim daha almak için diğer maldan vazgeçilmesi gereken miktarı gösteren orana "_____" (Marjinal İkame Oranı) denir.
+
+CEVAP ANAHTARI: Fayda, Marjinal, Azalan, Sıfırdır, Farksızlık, Dışbükey, Bütçe, Sağa, Döner, Teğet, Gelir, İkame, MRS.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
++ 6.Ünite :
+Üretim sürecinde kullanılan girdilerden (üretim faktörlerinden) en az birinin miktarının değiştirilemediği (sabit kaldığı) döneme "_____" dönem denir.
+
+Üretimde kullanılan tüm girdilerin değiştirilebildiği, sabit maliyetin olmadığı döneme "_____" dönem denir.
+
+Diğer girdiler sabitken, değişken girdi miktarı artırıldığında, bir noktadan sonra her ilave girdinin sağladığı üretim artışının azalmasına "_____" verimler kanunu denir.
+
+Üretim miktarı ne olursa olsun (sıfır olsa bile) değişmeyen, binanın kirası veya sigorta gibi maliyetlere "_____" maliyetler denir.
+
+Üretim miktarına bağlı olarak değişen (hammadde, işçilik vb.) maliyetlere "_____" maliyetler denir.
+
+Üretimi bir birim artırmak için katlanılması gereken ek maliyete "_____" maliyet (MC) denir.
+
+Toplam Maliyetin (TC) üretim miktarına (Q) bölünmesiyle elde edilen değere "_____" maliyet (ATC) denir.
+
+Marjinal Maliyet (MC) eğrisi, Ortalama Maliyet (ATC) ve Ortalama Değişken Maliyet (AVC) eğrilerini her zaman "_____" (minimum) noktalarında keser.
+
+Ortalama maliyetin, üretim miktarı arttıkça azalması durumuna (uzun dönemde) "_____" ekonomileri (Artan Getiri) denir.
+
+Marjinal ürünün (MP) arttığı bir aralıkta, Marjinal maliyet (MC) "_____" (azalır). (Tersi ilişki vardır).
+
+Firmaya aynı üretim düzeyini sağlayan farklı girdi bileşimlerini gösteren eğriye "_____" (Eşürün) eğrisi denir.
+
+Firmanın belirli bir bütçe ile alabileceği faktör bileşimlerini gösteren, bütçe doğrusuna benzeyen doğruya "_____" doğrusu denir.
+
+Uzun dönem ortalama maliyet eğrisinin (LRAC) "U" şeklinde olmasının nedeni önce ölçek ekonomilerinin, sonra ise ölçeğe göre "_____" (azalan) getirinin (Negatif ölçek ekonomileri) ortaya çıkmasıdır.
+
+CEVAP ANAHTARI: Kısa, Uzun, Azalan, Sabit, Değişken, Marjinal, Ortalama, Minimum, Ölçek, Azalır, Eşürün, Eşmaliyet, Azalan.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
++ 7.Ünite :
+Alıcı ve satıcı sayısının çok olduğu, ürünlerin homojen olduğu ve piyasaya giriş-çıkışın serbest olduğu piyasa türüne "_____" piyasası denir.
+
+Tam rekabet piyasasında, hiçbir alıcı veya satıcının tek başına piyasa fiyatını etkileme gücünün olmamasına "_____" (Atomisite) koşulu denir.
+
+Tam rekabet piyasasında firmalar fiyat belirleyici değil, piyasada oluşan fiyatı kabul eden "_____" (Fiyat alıcı) konumundadırlar.
+
+Tam rekabetçi bir firmanın karşı karşıya olduğu talep eğrisi, piyasa fiyatı düzeyinde yatay eksene "_____" (Paralel/Sonsuz esnek) bir doğrudur.
+
+Firmanın karını maksimize ettiği (veya zararını minimize ettiği) denge üretim düzeyi, Marjinal Gelirin (MR) "_____" (Marjinal Maliyete - MC) eşit olduğu noktadır.
+
+Tam rekabet piyasasında fiyat (P) her zaman Ortalama Gelire (AR) ve "_____" (Marjinal Gelire - MR) eşittir. (P = AR = MR).
+
+Kısa dönemde, fiyat (P) Ortalama Değişken Maliyetin (AVC) altına düştüğünde, firma üretim yapmayı durdurur; bu noktaya "_____" noktası denir.
+
+Tam rekabet piyasasında uzun dönemde firmaların aşırı kar elde etmesi, piyasaya yeni firmaların girmesine neden olur ve bu durum piyasa fiyatını düşürerek ekonomik karı "_____" (Sıfıra) indirir.
+
+Uzun dönem dengesinde tam rekabetçi firma, Ortalama Maliyetin (AC) "_____" (Minimum) olduğu noktada üretim yapar, bu da üretim etkinliğini gösterir.
+
+Bir firmanın toplam geliri (TR), toplam maliyetine (TC) eşitse, firma "_____" kar (Normal kar) elde ediyor demektir.
+
+Tam rekabet piyasasında malların birbirinin aynısı olması, tüketicinin satıcılar arasında fark gözetmemesini sağlar; buna "_____" (Homojenlik) koşulu denir.
+
+Kısa dönemde firmanın kar edebilmesi için piyasa fiyatının, firmanın Ortalama "_____" (Toplam) Maliyetinden (ATC) yüksek olması gerekir.
+
+Tam rekabet piyasasında kaynak dağılımı en verimli şekilde gerçekleşir çünkü fiyat, "_____" (Marjinal Maliyete) eşittir (P=MC).
+
+CEVAP ANAHTARI: Tam Rekabet, Atomisite, Fiyat Alıcı (Price Taker), Paralel, Marjinal Maliyete, Marjinal Gelire, Kapanma, Sıfıra, Minimum, Normal, Homojenlik, Toplam, Marjinal Maliyete.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
++ 8.Ünite :
+Tek bir satıcının olduğu ve ikamesi olmayan bir malı sattığı, giriş engellerinin bulunduğu piyasa türüne "_____" denir.
+
+Monopolcü bir firmanın, aynı malı farklı alıcılara farklı fiyatlardan satarak tüketici rantının tamamını veya bir kısmını ele geçirmesine "_____" farklılaştırması denir.
+
+Az sayıda satıcının (örneğin otomobil, GSM operatörleri) olduğu ve firmaların kararlarının birbirini etkilediği (karşılıklı bağımlılık) piyasa türüne "_____" denir.
+
+Oligopol piyasasında firmaların bir araya gelerek fiyatı ve üretim miktarını birlikte belirlemek (monopol gibi davranmak) için yaptıkları anlaşmaya "_____" denir. (Örn: OPEC).
+
+Çok sayıda satıcının olduğu ancak ürünlerin farklılaştırıldığı (örneğin restoranlar, kuaförler) piyasa türüne "_____" rekabet piyasası denir.
+
+Monopolcü rekabet piyasasında firmaların talep eğrisi negatif eğimlidir ancak tam rekabete göre daha "_____" (Yatık/Esnek) yapıdadır.
+
+Bir üretim veya tüketim faaliyetinin, üçüncü şahıslar üzerinde yarattığı (fiyat mekanizmasına yansımayan) olumlu veya olumsuz etkilere "_____" denir.
+
+Fabrika bacasından çıkan dumanın çevreye zarar vermesi "" (Negatif) dışsallığa, aşı olan birinin başkalarına hastalık bulaştırmaması "" (Pozitif) dışsallığa örnektir.
+
+Tüketiminde rekabetin olmadığı ve kimsenin tüketimden mahrum bırakılamadığı (örneğin ulusal savunma, deniz feneri) mallara "_____" (Kamusal) mallar denir.
+
+Bir piyasada alıcı ve satıcıların ürün hakkında eşit bilgiye sahip olmamasına "_____" (Asimetrik) bilgi denir. (Örn: İkinci el araba piyasası).
+
+Monopolcü firma, karını maksimize etmek için üretimi, Marjinal Gelirin Marjinal Maliyete eşit olduğu (MR=MC) noktada belirler, ancak fiyatı bu noktanın "_____" (Üzerinde) belirler.
+
+Monopolcü rekabet piyasasında firmalar, ürünlerini rakiplerinden ayırmak ve talep yaratmak için yoğun bir şekilde "_____" (Reklam/Tanıtım) harcaması yaparlar.
+
+Eksik rekabet piyasalarında (Monopol, Oligopol) fiyatın Marjinal Maliyetten büyük olması (P > MC), kaynak dağılımında "_____" (Etkinsizlik/Dara Kaybı) yaratır.
+
+CEVAP ANAHTARI: Monopol, Fiyat, Oligopol, Kartel, Monopolcü, Yatık (Esnek), Dışsallık, Negatif - Pozitif, Kamusal, Asimetrik, Üzerinde, Reklam, Etkinsizlik (Dara Kaybı).
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
