@@ -21,8 +21,10 @@ let bulkState = null;
 let fbAnswerStates = [];
 let mcAnswerStates = [];
 let questionUnitNames = [];
+let currentFileName = ''; // Yüklü dosyanın adı
 
 const CACHE_KEY = 'sorcoz.cache.v1';
+const PROGRESS_KEY = 'sorcoz.progress.v1';
 const MC_AUTO_NEXT_DELAY_MS = 1100;
 let mcAutoAdvanceTimer = null;
 
@@ -54,15 +56,27 @@ function uniqueStrings(input) {
 
 function buildUniqueOptions({ correctAnswer, pools, desiredCount, allowDuplicates = false }) {
     const correct = String(correctAnswer ?? '').trim();
+    if (!correct) return [];
+    
     // Boşluk doldurma için allowDuplicates=true ise, tekrarlayan cevapları kaldırma
     const pool = allowDuplicates 
         ? [].concat(...(Array.isArray(pools) ? pools : [])).map(v => String(v ?? '').trim()).filter(Boolean)
         : uniqueStrings([].concat(...(Array.isArray(pools) ? pools : [])));
+    
+    // Doğru cevap dışındaki tüm seçenekler
     const distractors = pool.filter(a => a !== correct);
-    const picked = shuffleArray(distractors).slice(0, Math.max(0, (desiredCount || 0) - 1));
-    const combined = [correct, ...picked].filter(Boolean);
-    // Son seçeneklerde de unique kontrolü yap (ama allowDuplicates true ise kendi seçenekler içinde unique olsun)
-    return shuffleArray(uniqueStrings(combined));
+    
+    // İhtiyaç olan çeldirici sayısı (toplam - 1, çünkü doğru cevap zaten var)
+    const neededDistractors = Math.max(0, (desiredCount || 4) - 1);
+    
+    // Çeldiricileri karıştır ve al
+    const picked = shuffleArray(distractors).slice(0, neededDistractors);
+    
+    // Doğru cevabı MUTLAKA ekle + seçilen çeldiriciler
+    const combined = [correct, ...picked];
+    
+    // Karıştır ve döndür (uniqueStrings kullanma - zaten doğru cevap 1 kere, distractors zaten farklı)
+    return shuffleArray(combined);
 }
 
 function safeJsonParse(text) {
@@ -145,6 +159,102 @@ function clearCache() {
     refreshCacheButtons();
 }
 
+// ===== İlerleme Takibi Fonksiyonları =====
+function loadProgress() {
+    if (!hasLocalStorage()) return {};
+    const raw = localStorage.getItem(PROGRESS_KEY);
+    if (!raw) return {};
+    try {
+        return JSON.parse(raw);
+    } catch {
+        return {};
+    }
+}
+
+function saveProgress(progressData) {
+    if (!hasLocalStorage()) return;
+    try {
+        localStorage.setItem(PROGRESS_KEY, JSON.stringify(progressData));
+    } catch {
+        // ignore
+    }
+}
+
+function markUnitComplete(fileName, unitName, mode) {
+    const progress = loadProgress();
+    if (!progress[fileName]) {
+        progress[fileName] = {};
+    }
+    if (!progress[fileName][unitName]) {
+        progress[fileName][unitName] = {};
+    }
+    progress[fileName][unitName][mode] = true;
+    saveProgress(progress);
+}
+
+function isUnitComplete(fileName, unitName, mode) {
+    const progress = loadProgress();
+    return !!(progress[fileName]?.[unitName]?.[mode]);
+}
+
+function getCompletedUnitsForFile(fileName) {
+    const progress = loadProgress();
+    return progress[fileName] || {};
+}
+
+function clearProgressForFile(fileName) {
+    const progress = loadProgress();
+    delete progress[fileName];
+    saveProgress(progress);
+}
+
+function renderProgressSummary() {
+    const summaryEl = document.getElementById('progress-summary');
+    if (!summaryEl || !currentFileName || units.length <= 1) {
+        if (summaryEl) summaryEl.style.display = 'none';
+        return;
+    }
+
+    const completedUnits = getCompletedUnitsForFile(currentFileName);
+    const hasAnyProgress = Object.keys(completedUnits).length > 0;
+
+    if (!hasAnyProgress) {
+        summaryEl.style.display = 'none';
+        return;
+    }
+
+    const realUnits = units.filter(u => u.unitName !== 'Tüm Sorular');
+    const modes = ['fillblank', 'multiple-choice', 'exam'];
+    const modeNames = {
+        'fillblank': '✍️ Boşluk',
+        'multiple-choice': '✅ Çoktan',
+        'exam': '📝 Sınav'
+    };
+
+    let html = '<h3>📊 İlerlemeniz</h3>';
+    
+    realUnits.forEach(unit => {
+        const unitProgress = completedUnits[unit.unitName] || {};
+        const completedModes = modes.filter(m => unitProgress[m]);
+        
+        if (completedModes.length > 0) {
+            const badges = completedModes.map(m => 
+                `<span class="progress-unit-badge completed">${modeNames[m]} ✓</span>`
+            ).join('');
+            
+            html += `
+                <div style="margin-top: 12px;">
+                    <strong>${unit.unitName}:</strong>
+                    <div class="progress-unit-list" style="margin-top: 6px;">${badges}</div>
+                </div>
+            `;
+        }
+    });
+
+    summaryEl.innerHTML = html;
+    summaryEl.style.display = 'block';
+}
+
 function restoreFromCache() {
     const payload = loadCachePayload();
     if (!payload) {
@@ -166,6 +276,7 @@ function restoreFromCache() {
     currentQuestionIndex = 0;
     questionUnitNames = [];
 
+    currentFileName = payload.fileName || '';
     fileName.textContent = payload.fileName || 'Son yüklenen dosya';
     if (units.length > 0) {
         questionCount.textContent = `${units.length} ünite, toplam ${allQuestions.length} soru bulundu`;
@@ -425,6 +536,7 @@ function processFile(file) {
         const content = e.target.result;
         parseQuestions(content);
         
+        currentFileName = file.name;
         fileName.textContent = file.name;
         
         if (units.length > 0) {
@@ -702,6 +814,7 @@ function removeFile() {
     score = 0;
     userAnswers = [];
     bulkState = null;
+    currentFileName = '';
     setCurrentUnitLabel('');
 
     refreshCacheButtons();
@@ -712,6 +825,9 @@ function removeFile() {
 function createModeCards() {
     const modeCards = document.querySelector('.mode-cards');
     modeCards.innerHTML = '';
+
+    // İlerleme özeti göster
+    renderProgressSummary();
 
     // Toplu boşluk doldurma (ünite seçmeli)
     if (units.length > 1) {
@@ -870,13 +986,18 @@ function openUnitPicker(targetMode) {
         .filter(u => u.unitName !== 'Tüm Sorular')
         .forEach((unit, index) => {
             const id = `unit-cb-${index}`;
+            
+            // Ünitenin tamamlanma durumunu kontrol et
+            const isCompleted = currentFileName && isUnitComplete(currentFileName, unit.unitName, targetMode);
+            const completionMark = isCompleted ? ' <span style="color: var(--success-color); font-weight: bold;">✓</span>' : '';
+            
             const row = document.createElement('div');
             row.className = 'unit-picker-item';
             row.innerHTML = `
                 <div class="unit-picker-left">
                     <input type="checkbox" id="${id}" class="unit-checkbox" data-unit-index="${index}">
                     <div>
-                        <label for="${id}">${unit.unitName}</label>
+                        <label for="${id}">${unit.unitName}${completionMark}</label>
                         <div class="unit-picker-meta">${unit.questions.length} soru</div>
                     </div>
                 </div>
@@ -1922,10 +2043,28 @@ function showResults() {
     const wrong = total - correct;
     const percentage = Math.round((correct / total) * 100);
     
+    // Ünite tamamlandığında işaretle (100% doğru ise)
+    const unitName = currentUnit?.unitName || '';
+    if (percentage === 100 && unitName && currentFileName) {
+        markUnitComplete(currentFileName, unitName, currentMode);
+    }
+    
     document.getElementById('result-total').textContent = total;
     document.getElementById('result-correct').textContent = correct;
     document.getElementById('result-wrong').textContent = wrong;
     document.getElementById('result-percentage').textContent = percentage + '%';
+    
+    // Başlık güncelleme - hangi ünitenin bittiğini göster
+    const resultTitle = document.getElementById('result-title');
+    if (resultTitle) {
+        if (unitName) {
+            resultTitle.textContent = percentage === 100 
+                ? `${unitName} Tamamlandı! ✓` 
+                : `${unitName} Test Tamamlandı`;
+        } else {
+            resultTitle.textContent = 'Test Tamamlandı!';
+        }
+    }
     
     const resultIcon = document.getElementById('result-icon');
     if (percentage >= 90) {
@@ -1991,6 +2130,9 @@ function backToModeSelection() {
 
     // Mode ekranına dönünce dosya bilgisi tekrar görünsün
     setFileInfoForGameplay(false);
+
+    // İlerleme özetini güncelle
+    renderProgressSummary();
 
     // Mode ekranına dönünce aktif seti tekrar tüm sorulara çek
     questions = [...allQuestions];

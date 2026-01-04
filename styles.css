@@ -151,6 +151,44 @@ header h1 {
     white-space: pre-line;
 }
 
+.progress-summary {
+    margin-bottom: 20px;
+    padding: 16px 20px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #667eea15 0%, #764ba215 100%);
+    border: 2px solid var(--primary-color);
+}
+
+.progress-summary h3 {
+    margin-bottom: 12px;
+    color: var(--primary-color);
+    font-size: 1.1rem;
+}
+
+.progress-unit-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.progress-unit-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 12px;
+    border-radius: 20px;
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+.progress-unit-badge.completed {
+    background: var(--success-color);
+    color: white;
+    border-color: var(--success-color);
+}
+
 #btn-use-cache,
 #btn-clear-cache {
     margin-top: 10px;
